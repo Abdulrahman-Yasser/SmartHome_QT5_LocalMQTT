@@ -1,0 +1,12 @@
+
+*json
+*/*json
+*idx
+*/*idx
+*/CMakeFiles
+*/CMakeFiles/*
+*/build/
+build
+*/build/*
+
+
