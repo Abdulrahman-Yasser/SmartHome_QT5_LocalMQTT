@@ -8,6 +8,9 @@
 
 #include <QDialog>
 
+#include <mqtt/async_client.h>
+#include <mqtt/callback.h>
+
 namespace Ui {
 class SmartHomeTemperature;
 }
@@ -36,12 +39,17 @@ private slots:
     void on_pushButton_7_clicked();
 
 private:
+
     Ui::SmartHomeTemperature *ui;
     WeatherStatus _sensor;
 
     Whatsapp_reaction *_whatsapp;
     Mail_reaction *_mail;
     LCD *_lcd;
+
+    std::string global_URL;
+    std::string local_URL;
+
 };
 
 #endif // SMARTHOMETEMPERATURE_H

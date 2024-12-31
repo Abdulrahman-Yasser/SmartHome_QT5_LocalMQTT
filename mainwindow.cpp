@@ -35,3 +35,10 @@ void MainWindow::on_btn_sh_Temp_clicked()
     sh_home.exec();
 }
 
+
+void MainWindow::on_pushButton_clicked()
+{
+    std::string the_number = ui->globl_url->toPlainText().toStdString();
+    ui->globl_url->clear();
+}
+

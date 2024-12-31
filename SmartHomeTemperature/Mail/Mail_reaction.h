@@ -9,7 +9,7 @@
 class Mail_reaction : public Notifier
 {
 public:
-    Mail_reaction(std::string the_mail);
+    Mail_reaction(std::string the_mail, std::string _topic, mqtt::async_client* _client);
     void temperatureRaised(int value);
 private:
     std::string _mail;
