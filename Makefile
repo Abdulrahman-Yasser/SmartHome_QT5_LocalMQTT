@@ -187,6 +187,222 @@ yocto-gui-cmake_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake_autogen.dir/build.make CMakeFiles/yocto-gui-cmake_autogen.dir/build
 .PHONY : yocto-gui-cmake_autogen/fast
 
+SmartHomeLeds/smarthome_leds.o: SmartHomeLeds/smarthome_leds.cpp.o
+.PHONY : SmartHomeLeds/smarthome_leds.o
+
+# target to build an object file
+SmartHomeLeds/smarthome_leds.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeLeds/smarthome_leds.cpp.o
+.PHONY : SmartHomeLeds/smarthome_leds.cpp.o
+
+SmartHomeLeds/smarthome_leds.i: SmartHomeLeds/smarthome_leds.cpp.i
+.PHONY : SmartHomeLeds/smarthome_leds.i
+
+# target to preprocess a source file
+SmartHomeLeds/smarthome_leds.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeLeds/smarthome_leds.cpp.i
+.PHONY : SmartHomeLeds/smarthome_leds.cpp.i
+
+SmartHomeLeds/smarthome_leds.s: SmartHomeLeds/smarthome_leds.cpp.s
+.PHONY : SmartHomeLeds/smarthome_leds.s
+
+# target to generate assembly for a file
+SmartHomeLeds/smarthome_leds.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeLeds/smarthome_leds.cpp.s
+.PHONY : SmartHomeLeds/smarthome_leds.cpp.s
+
+SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.o: SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.o
+.PHONY : SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.o
+
+# target to build an object file
+SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.o
+.PHONY : SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.o
+
+SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.i: SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.i
+.PHONY : SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.i
+
+# target to preprocess a source file
+SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.i
+.PHONY : SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.i
+
+SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.s: SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.s
+.PHONY : SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.s
+
+# target to generate assembly for a file
+SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.s
+.PHONY : SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp.s
+
+SmartHomeTemperature/LCD/LCD.o: SmartHomeTemperature/LCD/LCD.cpp.o
+.PHONY : SmartHomeTemperature/LCD/LCD.o
+
+# target to build an object file
+SmartHomeTemperature/LCD/LCD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/LCD/LCD.cpp.o
+.PHONY : SmartHomeTemperature/LCD/LCD.cpp.o
+
+SmartHomeTemperature/LCD/LCD.i: SmartHomeTemperature/LCD/LCD.cpp.i
+.PHONY : SmartHomeTemperature/LCD/LCD.i
+
+# target to preprocess a source file
+SmartHomeTemperature/LCD/LCD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/LCD/LCD.cpp.i
+.PHONY : SmartHomeTemperature/LCD/LCD.cpp.i
+
+SmartHomeTemperature/LCD/LCD.s: SmartHomeTemperature/LCD/LCD.cpp.s
+.PHONY : SmartHomeTemperature/LCD/LCD.s
+
+# target to generate assembly for a file
+SmartHomeTemperature/LCD/LCD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/LCD/LCD.cpp.s
+.PHONY : SmartHomeTemperature/LCD/LCD.cpp.s
+
+SmartHomeTemperature/Mail/Mail_reaction.o: SmartHomeTemperature/Mail/Mail_reaction.cpp.o
+.PHONY : SmartHomeTemperature/Mail/Mail_reaction.o
+
+# target to build an object file
+SmartHomeTemperature/Mail/Mail_reaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Mail/Mail_reaction.cpp.o
+.PHONY : SmartHomeTemperature/Mail/Mail_reaction.cpp.o
+
+SmartHomeTemperature/Mail/Mail_reaction.i: SmartHomeTemperature/Mail/Mail_reaction.cpp.i
+.PHONY : SmartHomeTemperature/Mail/Mail_reaction.i
+
+# target to preprocess a source file
+SmartHomeTemperature/Mail/Mail_reaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Mail/Mail_reaction.cpp.i
+.PHONY : SmartHomeTemperature/Mail/Mail_reaction.cpp.i
+
+SmartHomeTemperature/Mail/Mail_reaction.s: SmartHomeTemperature/Mail/Mail_reaction.cpp.s
+.PHONY : SmartHomeTemperature/Mail/Mail_reaction.s
+
+# target to generate assembly for a file
+SmartHomeTemperature/Mail/Mail_reaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Mail/Mail_reaction.cpp.s
+.PHONY : SmartHomeTemperature/Mail/Mail_reaction.cpp.s
+
+SmartHomeTemperature/Notifier/Notifier.o: SmartHomeTemperature/Notifier/Notifier.cpp.o
+.PHONY : SmartHomeTemperature/Notifier/Notifier.o
+
+# target to build an object file
+SmartHomeTemperature/Notifier/Notifier.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Notifier/Notifier.cpp.o
+.PHONY : SmartHomeTemperature/Notifier/Notifier.cpp.o
+
+SmartHomeTemperature/Notifier/Notifier.i: SmartHomeTemperature/Notifier/Notifier.cpp.i
+.PHONY : SmartHomeTemperature/Notifier/Notifier.i
+
+# target to preprocess a source file
+SmartHomeTemperature/Notifier/Notifier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Notifier/Notifier.cpp.i
+.PHONY : SmartHomeTemperature/Notifier/Notifier.cpp.i
+
+SmartHomeTemperature/Notifier/Notifier.s: SmartHomeTemperature/Notifier/Notifier.cpp.s
+.PHONY : SmartHomeTemperature/Notifier/Notifier.s
+
+# target to generate assembly for a file
+SmartHomeTemperature/Notifier/Notifier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Notifier/Notifier.cpp.s
+.PHONY : SmartHomeTemperature/Notifier/Notifier.cpp.s
+
+SmartHomeTemperature/Observer/Observer.o: SmartHomeTemperature/Observer/Observer.cpp.o
+.PHONY : SmartHomeTemperature/Observer/Observer.o
+
+# target to build an object file
+SmartHomeTemperature/Observer/Observer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Observer/Observer.cpp.o
+.PHONY : SmartHomeTemperature/Observer/Observer.cpp.o
+
+SmartHomeTemperature/Observer/Observer.i: SmartHomeTemperature/Observer/Observer.cpp.i
+.PHONY : SmartHomeTemperature/Observer/Observer.i
+
+# target to preprocess a source file
+SmartHomeTemperature/Observer/Observer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Observer/Observer.cpp.i
+.PHONY : SmartHomeTemperature/Observer/Observer.cpp.i
+
+SmartHomeTemperature/Observer/Observer.s: SmartHomeTemperature/Observer/Observer.cpp.s
+.PHONY : SmartHomeTemperature/Observer/Observer.s
+
+# target to generate assembly for a file
+SmartHomeTemperature/Observer/Observer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Observer/Observer.cpp.s
+.PHONY : SmartHomeTemperature/Observer/Observer.cpp.s
+
+SmartHomeTemperature/WeatherStatus/WeatherStatus.o: SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.o
+.PHONY : SmartHomeTemperature/WeatherStatus/WeatherStatus.o
+
+# target to build an object file
+SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.o
+.PHONY : SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.o
+
+SmartHomeTemperature/WeatherStatus/WeatherStatus.i: SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.i
+.PHONY : SmartHomeTemperature/WeatherStatus/WeatherStatus.i
+
+# target to preprocess a source file
+SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.i
+.PHONY : SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.i
+
+SmartHomeTemperature/WeatherStatus/WeatherStatus.s: SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.s
+.PHONY : SmartHomeTemperature/WeatherStatus/WeatherStatus.s
+
+# target to generate assembly for a file
+SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.s
+.PHONY : SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp.s
+
+SmartHomeTemperature/Whatsapp/Whatsapp_reaction.o: SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.o
+.PHONY : SmartHomeTemperature/Whatsapp/Whatsapp_reaction.o
+
+# target to build an object file
+SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.o
+.PHONY : SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.o
+
+SmartHomeTemperature/Whatsapp/Whatsapp_reaction.i: SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.i
+.PHONY : SmartHomeTemperature/Whatsapp/Whatsapp_reaction.i
+
+# target to preprocess a source file
+SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.i
+.PHONY : SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.i
+
+SmartHomeTemperature/Whatsapp/Whatsapp_reaction.s: SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.s
+.PHONY : SmartHomeTemperature/Whatsapp/Whatsapp_reaction.s
+
+# target to generate assembly for a file
+SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.s
+.PHONY : SmartHomeTemperature/Whatsapp/Whatsapp_reaction.cpp.s
+
+SmartHomeTemperature/smarthometemperature.o: SmartHomeTemperature/smarthometemperature.cpp.o
+.PHONY : SmartHomeTemperature/smarthometemperature.o
+
+# target to build an object file
+SmartHomeTemperature/smarthometemperature.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/smarthometemperature.cpp.o
+.PHONY : SmartHomeTemperature/smarthometemperature.cpp.o
+
+SmartHomeTemperature/smarthometemperature.i: SmartHomeTemperature/smarthometemperature.cpp.i
+.PHONY : SmartHomeTemperature/smarthometemperature.i
+
+# target to preprocess a source file
+SmartHomeTemperature/smarthometemperature.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/smarthometemperature.cpp.i
+.PHONY : SmartHomeTemperature/smarthometemperature.cpp.i
+
+SmartHomeTemperature/smarthometemperature.s: SmartHomeTemperature/smarthometemperature.cpp.s
+.PHONY : SmartHomeTemperature/smarthometemperature.s
+
+# target to generate assembly for a file
+SmartHomeTemperature/smarthometemperature.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yocto-gui-cmake.dir/build.make CMakeFiles/yocto-gui-cmake.dir/SmartHomeTemperature/smarthometemperature.cpp.s
+.PHONY : SmartHomeTemperature/smarthometemperature.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -273,6 +489,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... yocto-gui-cmake_autogen"
 	@echo "... yocto-gui-cmake"
+	@echo "... SmartHomeLeds/smarthome_leds.o"
+	@echo "... SmartHomeLeds/smarthome_leds.i"
+	@echo "... SmartHomeLeds/smarthome_leds.s"
+	@echo "... SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.o"
+	@echo "... SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.i"
+	@echo "... SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.s"
+	@echo "... SmartHomeTemperature/LCD/LCD.o"
+	@echo "... SmartHomeTemperature/LCD/LCD.i"
+	@echo "... SmartHomeTemperature/LCD/LCD.s"
+	@echo "... SmartHomeTemperature/Mail/Mail_reaction.o"
+	@echo "... SmartHomeTemperature/Mail/Mail_reaction.i"
+	@echo "... SmartHomeTemperature/Mail/Mail_reaction.s"
+	@echo "... SmartHomeTemperature/Notifier/Notifier.o"
+	@echo "... SmartHomeTemperature/Notifier/Notifier.i"
+	@echo "... SmartHomeTemperature/Notifier/Notifier.s"
+	@echo "... SmartHomeTemperature/Observer/Observer.o"
+	@echo "... SmartHomeTemperature/Observer/Observer.i"
+	@echo "... SmartHomeTemperature/Observer/Observer.s"
+	@echo "... SmartHomeTemperature/WeatherStatus/WeatherStatus.o"
+	@echo "... SmartHomeTemperature/WeatherStatus/WeatherStatus.i"
+	@echo "... SmartHomeTemperature/WeatherStatus/WeatherStatus.s"
+	@echo "... SmartHomeTemperature/Whatsapp/Whatsapp_reaction.o"
+	@echo "... SmartHomeTemperature/Whatsapp/Whatsapp_reaction.i"
+	@echo "... SmartHomeTemperature/Whatsapp/Whatsapp_reaction.s"
+	@echo "... SmartHomeTemperature/smarthometemperature.o"
+	@echo "... SmartHomeTemperature/smarthometemperature.i"
+	@echo "... SmartHomeTemperature/smarthometemperature.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -38,6 +38,7 @@ private slots:
 
     void on_pushButton_7_clicked();
 
+
 private:
 
     Ui::SmartHomeTemperature *ui;
@@ -47,8 +48,10 @@ private:
     Mail_reaction *_mail;
     LCD *_lcd;
 
-    std::string global_URL;
+    bool url_changed;
     std::string local_URL;
+    std::string global_URL;
+    std::string full_URL;
 
 };
 

@@ -5,8 +5,10 @@
 #include <QDebug>
 
 
-Whatsapp_reaction::Whatsapp_reaction(std::string n, std::string _topic, mqtt::async_client* _client):
-Notifier{_topic, _client}, _the_number{n}{}
+Whatsapp_reaction::Whatsapp_reaction(std::string n, std::string global_topic, std::string whatsapp_topic, mqtt::async_client* _client):
+Notifier{global_topic, whatsapp_topic, _client}, _the_number{n}{
+    
+}
 
 bool Whatsapp_reaction::LookupForThatNummber(std::string n){
     if (n.compare( _the_number) == 0){
@@ -16,7 +18,7 @@ bool Whatsapp_reaction::LookupForThatNummber(std::string n){
 }
 
 void Whatsapp_reaction::temperatureRaised(int value){
-	std::string message =  "Phone call for " + _the_number + " " + value;
+    std::string message =  "Phone call for " + _the_number + " " + std::to_string(value);
 	std::cout << message;
 
     system("echo 'sending the whatsapp command'");

@@ -7,7 +7,7 @@
 class LCD : public Notifier
 {
 public:
-    LCD(std::string driver_dir, std::string _topic, mqtt::async_client* _client);
+    LCD(std::string driver_dir, std::string _global_topic, std::string lcd_topic, mqtt::async_client* _client);
     void temperatureRaised(int value);
 private :
     std::string _driver_dir;

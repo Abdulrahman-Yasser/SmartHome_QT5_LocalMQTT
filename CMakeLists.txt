@@ -26,6 +26,7 @@ set(PROJECT_SOURCES
         SmartHomeTemperature/WeatherStatus/WeatherStatus.h SmartHomeTemperature/WeatherStatus/WeatherStatus.cpp
         SmartHomeTemperature/LCD/LCD.h SmartHomeTemperature/LCD/LCD.cpp
         SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.h SmartHomeTemperature/HumadityTemperature_sensor/dht11_sensor.cpp
+        /usr/local/include/mqtt/callback.h /usr/local/include/mqtt/async_client.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -51,7 +52,7 @@ else()
     endif()
 endif()
 
-target_link_libraries(yocto-gui-cmake PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(yocto-gui-cmake PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Core paho-mqttpp3 paho-mqtt3as)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

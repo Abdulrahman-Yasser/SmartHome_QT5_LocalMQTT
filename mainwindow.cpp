@@ -38,7 +38,7 @@ void MainWindow::on_btn_sh_Temp_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-    std::string the_number = ui->globl_url->toPlainText().toStdString();
-    ui->globl_url->clear();
+    std::string the_global_url = ui->te_globl_url->toPlainText().toStdString();
+    ui->te_globl_url->clear();
 }
 
