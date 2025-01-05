@@ -35,7 +35,11 @@ void SmartHomeTemperature::on_btn_remove_wtsapp_clicked()
 }
 
 void SmartHomeTemperature::glbal_URL_changed(std::string the_global_url){
-    global_URL = the_global_url;
+    if(the_global_url[the_global_url.length() - 1] == '/' ){
+        global_URL = the_global_url;
+    }else{
+        global_URL = the_global_url + '/';
+    }
     full_URL = the_global_url + local_URL;
     _sensor.change_global_url(full_URL);
 }
@@ -82,6 +86,9 @@ void SmartHomeTemperature::on_pushButton_7_clicked()
 {
     if(!ui->te_local_URL->document()->isEmpty()){
         local_URL = ui->te_local_URL->toPlainText().toStdString();
+        if(!(local_URL[local_URL.length() - 1] == '/')){
+            local_URL = local_URL + '/';
+        }
         full_URL = global_URL + local_URL;
         _sensor.change_global_url(full_URL);
     }

@@ -2,7 +2,7 @@
 
 
 Notifier::Notifier(std::string _global_topic,std::string _notifier_topic, mqtt::async_client *_client):
-        global_url(_global_topic), notifier_topic(_notifier_topic), notifier_client(_client), full_url(global_url + "/" + notifier_topic)
+        global_url(_global_topic), notifier_topic(_notifier_topic), notifier_client(_client), full_url(global_url + notifier_topic)
         {}
 
 
@@ -21,12 +21,12 @@ void Notifier::notifier_publish_data(std::string msg){
 
 void Notifier::change_global_url(std::string new_url){
     global_url = new_url;
-    full_url = global_url + "/" + notifier_topic;
+    full_url = global_url + notifier_topic;
 }
 
 void Notifier::change_local_url(std::string new_url){
     notifier_topic = new_url;
-    full_url = global_url + "/" + notifier_topic;
+    full_url = global_url + notifier_topic;
 }
 
 

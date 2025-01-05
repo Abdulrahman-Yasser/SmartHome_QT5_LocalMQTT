@@ -38,8 +38,9 @@ void MainWindow::slot_for_signal(){
 void MainWindow::on_btn_sh_Temp_clicked()
 {
     SmartHomeTemperature sh_home;
-    QObject::connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::slot_for_signal);
-    QObject::connect(this, &MainWindow::sending_string_to_windows, &sh_home, &SmartHomeTemperature::glbal_URL_changed);
+    // QObject::connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::slot_for_signal);
+    // QObject::connect(this, &MainWindow::sending_string_to_windows, &sh_home, &SmartHomeTemperature::glbal_URL_changed);
+    sh_home.glbal_URL_changed(ui->te_globl_url->toPlainText().toStdString());
     sh_home.exec();
 }
 

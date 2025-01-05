@@ -29,7 +29,7 @@ void WeatherStatus::send(std::string _topic, std::string _payload){
 void WeatherStatus::change_global_url(std::string _global_url){
     url_changed = 1;
     global_topic = _global_url;
-    full_topic = global_topic + "/" + local_topic;
+    full_topic = global_topic + local_topic;
     std::list<Notifier *>::iterator it = my_subscriper.begin();
     while(it != my_subscriper.end()){
         (*it)->change_global_url(full_topic);
