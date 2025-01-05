@@ -82,6 +82,9 @@ mqtt::async_client* WeatherStatus::get_mqtt_clinet(void){
 
 
 void WeatherStatus::addSubscriber(Notifier *newSubscriber) {
+    if(mqtt_connect()){
+        newSubscriber->notifier_connected();
+    }
     my_subscriper.push_back(newSubscriber);
 }
 
