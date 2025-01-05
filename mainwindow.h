@@ -16,16 +16,18 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+signals:
+    void sending_string_to_windows(std::string the_string);
 private slots:
 
     void on_btn_sh_leds_clicked();
 
+    void slot_for_signal();
 
     void on_btn_sh_Temp_clicked();
 
     void on_pushButton_clicked();
-
+    
 private:
     Ui::MainWindow *ui;
 };

@@ -7,6 +7,8 @@
 #include "SmartHomeLeds/smarthome_leds.h"
 #include "SmartHomeTemperature/smarthometemperature.h"
 
+#include <QObject> 
+
 QVector<QString> vector;
 
 MainWindow::MainWindow(QWidget *parent)
@@ -28,10 +30,16 @@ void MainWindow::on_btn_sh_leds_clicked()
     sh_leds.exec();
 }
 
+void MainWindow::slot_for_signal(){
+    emit sending_string_to_windows(ui->te_globl_url->toPlainText().toStdString());
+}
+
 
 void MainWindow::on_btn_sh_Temp_clicked()
 {
     SmartHomeTemperature sh_home;
+    QObject::connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::slot_for_signal);
+    QObject::connect(this, &MainWindow::sending_string_to_windows, &sh_home, &SmartHomeTemperature::glbal_URL_changed);
     sh_home.exec();
 }
 

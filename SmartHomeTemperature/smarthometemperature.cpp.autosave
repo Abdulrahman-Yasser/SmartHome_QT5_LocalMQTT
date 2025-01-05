@@ -83,7 +83,7 @@ void SmartHomeTemperature::on_pushButton_7_clicked()
     if(!ui->te_local_URL->document()->isEmpty()){
         local_URL = ui->te_local_URL->toPlainText().toStdString();
         full_URL = global_URL + local_URL;
-        _sensor.change_global_url(full_URL);
+        _sensor.change_global_url(full_U    RL);
     }
     _sensor.ChangeTemperature(17);
 }

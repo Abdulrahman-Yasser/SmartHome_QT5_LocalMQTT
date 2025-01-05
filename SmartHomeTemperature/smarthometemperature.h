@@ -23,8 +23,14 @@ public:
     explicit SmartHomeTemperature(QWidget *parent = nullptr);
     ~SmartHomeTemperature();
 
+// signals:
+
+public slots:
+    void glbal_URL_changed(std::string the_global_url);
+
 private slots:
     void on_btn_add_wtsapp_clicked();
+
 
     void on_btn_remove_wtsapp_clicked();
 
