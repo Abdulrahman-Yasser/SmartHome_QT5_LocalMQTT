@@ -1,0 +1,15 @@
+files/
+files/Control_LEDs
+files/Control_LEDs/control_leds.ui
+files/Control_LEDs/control_leds.h
+files/Control_LEDs/control_leds.cpp
+files/mainwindow.ui
+files/mainwindow.h
+files/CMakeLists.txt
+files/Home_Weather
+files/Home_Weather/home_weather.h
+files/Home_Weather/home_weather.ui
+files/Home_Weather/home_weather.cpp
+files/CMakeLists.txt.user
+files/mainwindow.cpp
+files/main.cpp

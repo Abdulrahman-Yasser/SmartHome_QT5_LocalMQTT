@@ -1,0 +1,38 @@
+# Append custom files and changes to the base-files recipe
+
+# hello_2.10.bbappend
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
+
+# Apply a patch to the existing hello recipe
+# SRC_URI += "file://weston.ini"
+
+
+do_configure:append() {
+echo "export QT_QPA_FONTDIR=/usr/share/fonts/ttf" >> weston.ini
+echo "[autolaunch]" >> weston.ini
+echo "path=/home/root/.startup.sh" >> weston.ini
+echo "" >> weston.ini
+echo "[core]" >> weston.ini
+echo "exec=myQTApp -platform wayland" >> weston.ini
+
+
+
+# echo "[autolaunch]" >> weston.ini
+
+# echo "path=/usr/bin/yocto-iot-gui" >> weston.ini
+
+
+# echo "[autolaunch]" >> weston.ini
+
+# echo "path=/usr/bin/myQTApp" >> weston.ini
+
+}
+
+
+do_install:append(){
+	bbwarn "the dir is ${WORKDIR} . does it contain weston.ini ?"
+	install -d ${D}${ROOT_HOME}/.config/weston/
+	install -m 0644 ${WORKDIR}/weston.ini ${D}${ROOT_HOME}/.config/weston/
+}
+FILES:${PN} += "${base_prefix}/home/root/.config/weston/weston.ini"
+

@@ -1,0 +1,22 @@
+SUMMARY = "QT program programmed by QT creator builded with cmake"
+DESCRIPTION = "Home application to control your home with smart AI assistance"
+
+LICENSE = "CLOSED"
+
+DEPENDS += " qtbase wayland "
+
+SRC_URI = "	\
+		file://CMakeLists.txt \
+		file://main.cpp \
+	  	file://mainwindow.cpp \
+	   	file://mainwindow.h \
+	   	file://mainwindow.ui \
+	   "
+
+S = "${WORKDIR}"
+
+
+
+inherit cmake
+inherit qmake5
+

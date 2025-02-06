@@ -1,0 +1,31 @@
+# Append custom files and changes to the base-files recipe
+
+# Ensure the custom files directory is in the search path
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
+
+# Add the custom .bashrc to the image
+SRC_URI = " \
+file://dot.bashrc \
+file://dot.profile \
+file://dot.startup.sh \
+file://dot.xprofile \
+"
+RDEPENDS:base-files = " bash "
+
+do_install:append(){
+	bbwarn "the file here ${WORKDIR}"
+	bbwarn "the file here ${D}"
+	bbwarn "the file here ${base_prefix}"
+	# install -m 0755 ${WORKDIR}/dot.profile ${IMAGE_ROOTFS}/.profile
+#	install -m 0755 ${WORKDIR}/dot.profile ${D}${sysconfdir}/skel/.profile
+#	install -m 0755 ${WORKDIR}/dot.bashrc ${D}${sysconfdir}/skel/.bashrc
+#	install -m 0755 ${WORKDIR}/dot.profile ${D}/.profile
+#	install -m 0755 ${WORKDIR}/dot.bashrc ${D}/.bashrc
+# The right directory that works with sh bash : 
+	install -m 0755 ${WORKDIR}/dot.bashrc ${D}${ROOT_HOME}/.bashrc
+	install -m 0755 ${WORKDIR}/dot.profile ${D}${ROOT_HOME}/.profile
+	install -m 0755 ${WORKDIR}/dot.xprofile ${D}${ROOT_HOME}/.xprofile
+	install -m 0755 ${WORKDIR}/dot.startup.sh ${D}${ROOT_HOME}/.startup.sh
+	install -d 0700 ${D}/tmp/root-weston
+}
+# Modify the installation step to replace the default .bashrc
